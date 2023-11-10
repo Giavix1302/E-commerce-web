@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">    
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- title -->
+    <title>Cart | Javix</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-center">
+            <a href="" class="header__logo">
+                <img src="./assets/image/logo.svg" alt="" class="header__logo__img">
+            </a>
+            <ul class="header__nav">
+                <li><a href="./index.html" class="header__nav_item">home</a></li>
+                <li><a href="./products.html" class="header__nav_item ">shop</a></li>
+                <li><a href="./about.html" class="header__nav_item">about</a></li>
+            </ul>
+            <div class="header__wrap">
+                <button class="header__sign-up">sign up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart">
+        <div class="cart-background">
+            <h3 class="cart-background-title">#cart</h3>
+            <p class="cart-background-desc">Add you coupon code & save upto 70%!</p>
+        </div>
+        <div class="cart-center">
+            <section class="cart-container">
+                <div class="cart-heading">
+                    <h3 class="cart-title">Shopping Cart</h3>
+                    <span class="cart-quantity"> 3 Items</span>
+                </div>
+                <div class="cart-name-info">
+                    <p class="cart-product-detail-text">PRODUCT DETAILS</p>
+                    <P class="cart-quantity-text">QUANTITY</P>
+                    <p class="cart-price-text">PRICE</p>
+                    <p class="cart-total-text">TOTAL</p>
+                </div>
+                <div class="cart-list">
+                    <article class="cart-item">
+                        <div class="cart-item-info">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="cart-item-image">
+                            <div class="cart-wrap-info">
+                                <h5 class="cart-item-name line-clamp">Fjalraven - Foldsack No.1 Backpack, Fits 15 Laptops</h5>
+                                <p class="cart-item-cate">men's clothing</p>
+                                <button class="cart-item-remove">Remove</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-quatity">
+                            <button class="cart-item-quatity-decrease">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <span class="cart-item-quatity-num">2</span>
+                            <button class="cart-item-quatity-increase">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <span class="cart-item-price">34</span>
+                        <span class="cart-item-total">66</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="order-summary">
+                <section class="order-coupon">
+                    <h4 class="order-coupon-heading">Apply Coupon</h4>
+                    <div class="form__group">
+                        <input type="text" id="order-coupon-fullname" name="order-coupon-fullname" rules="required" placeholder="Enter you coupon" class="order-coupon-form__control">
+                        <button class="order-coupon-btn">Apply</button>
+                    </div>
+                </section>
+
+                <section class="order-cart-totals">
+                    <h4 class="order-cart-heading">Cart Totals</h4>
+                    <table class="order-cart-table">
+                        <tr class="cart-table-column">
+                            <td>Cart Subtotal</td>
+                            <td class="num-totals">334</td>
+                        </tr>
+                        <tr class="cart-table-column">
+                            <td>Shipping</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr class="cart-table-column text-highline">
+                            <td>Total:</td>
+                            <td class="num-totals">334</td>
+                        </tr>
+                    </table>
+                    <button class="order-cart-btn">Check Out</button>
+                </section>
+            </section>
+        </div>
+    </section>
+    
+
+    
+    <footer class="footer">
+        <div class="footer-center">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="column">
+                    <img src="./assets/image/logo-yellow.png" alt="Lesson." class="footer__logo">
+                    <p class="desc">Life's pretty straight without shopping, shopping made easier with Javix website.</p>
+                    <div class="footer__social">
+                        <a href="#!">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#!">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#!">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#!">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="column">
+                    <h3 class="title">Company</h3>
+                    <ul class="list">
+                        <li>
+                            <a href="#!">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Features</a>
+                        </li>
+                        <li>
+                            <a href="#!">Our Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!">Latest News</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="column">
+                    <h3 class="title">Support</h3>
+                    <ul class="list">
+                        <li>
+                            <a href="#!">FAQ’s</a>
+                        </li>
+                        <li>
+                            <a href="#!">Terms &amp; Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="column">
+                    <h3 class="title">Address</h3>
+                    <ul class="list">
+                        <li>
+                            <a href="#!"><strong>Location:</strong> Thanh Phu village, Vinh Cuu district, Dong Nai province, Viet Nam</a>
+                        </li>
+                        <li>
+                            <a href="#!"><strong>Email:</strong> nguyenhoanggiavi123@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#!"><strong>Phone:</strong> +84 0987654321</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copy-right">
+                <p class="desc">Copyright ©2023 Javix, All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal-signUp">
+        <div class="modal-container">
+            <img src="./assets/image/commerce-img-modal.jpg" alt="" class="modal__background">
+            <div class="modal-content">
+                <button class="modal__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <form action="" method="post" class="form" id="register-form">
+                    <h3 class="form__heading">Sign Up</h3>
+                    <p class="form__desc">Register for a convenient shopping experience.</p>
+
+                    <div class="form__group">
+                        <label for="fullname" class="form__label">Username</label>
+                        <input type="text" id="fullname" name="fullname" rules="required" placeholder="Javvix_1302" class="form__control">
+                        <span class="form__message"></span>
+                    </div>
+
+                    <div class="form__group ">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" rules="required|email" placeholder="Javvix@gmail.com" class="form__control">
+                        <span class="form__message"></span>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="password" class="form__label">Password</label>
+                        <input type="password" id="password" name="password" rules="required|min:6" placeholder="Enter your password" class="form__control">
+                        <span class="form__message"></span>
+                    </div>
+
+                    <button class="form__submit">Sign Up</button>
+                    
+                    <div class="form__remembe-acc">
+                        <input type="checkbox" name="" id="">
+                        <p>Remember Me</p>
+                    </div>    
+                </form>
+
+                <div class="modal__footer">
+                    <p>Do you already have an account? <a href="">Login Javix</a></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

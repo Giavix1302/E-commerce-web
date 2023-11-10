@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">    
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- title -->
+    <title>Shop | Javix</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-center">
+            <a href="" class="header__logo">
+                <img src="./assets/image/logo.svg" alt="" class="header__logo__img">
+            </a>
+            <ul class="header__nav">
+                <li><a href="./index.html" class="header__nav_item ">home</a></li>
+                <li><a href="#!" class="header__nav_item active-nav">shop</a></li>
+                <li><a href="./about.html" class="header__nav_item">about</a></li>
+            </ul>
+            <div class="header__wrap">
+                <a href="./cart.html" class="toggle-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="toggle-cart-count">1</span>
+                </a>
+                <!-- sub cart -->
+                <div class="sub-cart">
+                    <div class="list-sub-cart">
+                        <!-- <h5 class="sub-cart-empty">Cart is empty !</h5> -->
+                        <article class="sub-cart-item">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="sub-cart-img">
+                            <div class="sub-cart-item-info">
+                                <h5 class="sub-cart-title line-clamp">Fjalraven - Foldsack No.1 Backpack, Fits 15 Laptops</h5>
+                                <p class="sub-cart-cate">men's clothing</p>
+                            </div>
+                            <p class="sub-cart-quatity">x1</p>
+                        </article>
+                        
+                    </div>
+                    <a href="./cart.html" class="sub-cart-btn">Go to cart</a>
+                </div>
+                
+                <button class="header__sign-up">sign up</button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="main-content">
+        <div class="main-content__center">
+            <div class="bread-crumb-nav">
+                <h3 class="bcv-title">Home</h3>
+                <div class="icon-divided">/</div>
+                <h3 class="bcv-title">Shop</h3>
+            </div>
+            <div class="wrap-sidebar-products">
+                <section class="sidebar">
+                    <section class="seach-products">
+                        <label class="search-text">Search</label>
+                        <input type="text" name="" id="" class="search-input" placeholder="Search...">
+                    </section>
+                    <section class="sort-products">
+                        <h4 class="sort-text">Sort</h4>
+                        <div class="type-sort">
+                            <input type="checkbox" name="sort" id="" class="sort-control" value="price|increase">
+                            <label class="name-sort" for="">Increasing price</label>
+                        </div>
+                        
+                        <div class="type-sort">
+                            <input type="checkbox" name="sort" id="" class="sort-control" value="price|decrease">                 
+                            <label class="name-sort" for="">Deincreasing price</label>
+                        </div>
+    
+                        <div class="type-sort">
+                            <input type="checkbox" name="sort" id="" class="sort-control" value="rate|increase">                
+                            <label class="name-sort" for="">Increasing rate</label>
+                        </div>
+    
+                        <div class="type-sort">
+                            <input type="checkbox" name="sort" id="" class="sort-control" value="rate|decrease"> 
+                            <label class="name-sort" for="">Deincreasing rate</label>
+                        </div>
+                    </section>
+                </section>
+                <section class="products">
+                    <section class="categories">
+                        <h4 class="categories-text">Categories</h4>
+                        <div class="wrap-btn">
+                            <button class="categorie-btn active-cate">loại 1</button>
+                            <button class="categorie-btn">loại 1</button>
+                            <button class="categorie-btn">loại 1</button>
+                            <button class="categorie-btn">loại 1</button>
+                            <button class="categorie-btn">loại 1</button>
+                        </div>
+                    </section>
+    
+                    <section class="products-container">
+                        <article class="product-card">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="product-card__image">
+                            <div class="product-card__info">
+                                <div class="wrap-name-rate">
+                                    <h4 class="product-card__name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h4>
+                                    <div class="product-card__rate">
+                                        <img src="./assets/icon/star.png" alt="" class="product-card__icon-star">
+                                        <span class="product-card__num-rate">5.0</span>
+                                    </div>
+                                </div>
+                                <p class="product-card__cate">men's clothing</p>
+    
+                                <div class="product-card__btn">
+                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="" class="product-card__btn-cart">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="product-card__image">
+                            <div class="product-card__info">
+                                <div class="wrap-name-rate">
+                                    <h4 class="product-card__name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h4>
+                                    <div class="product-card__rate">
+                                        <img src="./assets/icon/star.png" alt="" class="product-card__icon-star">
+                                        <span class="product-card__num-rate">5.0</span>
+                                    </div>
+                                </div>
+                                <p class="product-card__cate">men's clothing</p>
+    
+                                <div class="product-card__btn">
+                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="" class="product-card__btn-cart">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="product-card__image">
+                            <div class="product-card__info">
+                                <div class="wrap-name-rate">
+                                    <h4 class="product-card__name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h4>
+                                    <div class="product-card__rate">
+                                        <img src="./assets/icon/star.png" alt="" class="product-card__icon-star">
+                                        <span class="product-card__num-rate">5.0</span>
+                                    </div>
+                                </div>
+                                <p class="product-card__cate">men's clothing</p>
+    
+                                <div class="product-card__btn">
+                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="" class="product-card__btn-cart">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="product-card__image">
+                            <div class="product-card__info">
+                                <div class="wrap-name-rate">
+                                    <h4 class="product-card__name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h4>
+                                    <div class="product-card__rate">
+                                        <img src="./assets/icon/star.png" alt="" class="product-card__icon-star">
+                                        <span class="product-card__num-rate">5.0</span>
+                                    </div>
+                                </div>
+                                <p class="product-card__cate">men's clothing</p>
+    
+                                <div class="product-card__btn">
+                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="" class="product-card__btn-cart">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="product-card">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="product-card__image">
+                            <div class="product-card__info">
+                                <div class="wrap-name-rate">
+                                    <h4 class="product-card__name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h4>
+                                    <div class="product-card__rate">
+                                        <img src="./assets/icon/star.png" alt="" class="product-card__icon-star">
+                                        <span class="product-card__num-rate">5.0</span>
+                                    </div>
+                                </div>
+                                <p class="product-card__cate">men's clothing</p>
+    
+                                <div class="product-card__btn">
+                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="" class="product-card__btn-cart">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="product-card__image">
+                            <div class="product-card__info">
+                                <div class="wrap-name-rate">
+                                    <h4 class="product-card__name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h4>
+                                    <div class="product-card__rate">
+                                        <img src="./assets/icon/star.png" alt="" class="product-card__icon-star">
+                                        <span class="product-card__num-rate">5.0</span>
+                                    </div>
+                                </div>
+                                <p class="product-card__cate">men's clothing</p>
+    
+                                <div class="product-card__btn">
+                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="" class="product-card__btn-cart">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="product-card__image">
+                            <div class="product-card__info">
+                                <div class="wrap-name-rate">
+                                    <h4 class="product-card__name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h4>
+                                    <div class="product-card__rate">
+                                        <img src="./assets/icon/star.png" alt="" class="product-card__icon-star">
+                                        <span class="product-card__num-rate">5.0</span>
+                                    </div>
+                                </div>
+                                <p class="product-card__cate">men's clothing</p>
+                                <div class="product-card__btn">
+                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="" class="product-card__btn-cart">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <div class="pagination">
+                        <button class="prev-page">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button class="num-page active-page">1</button>
+                        <button class="num-page">2</button>
+                        <button class="num-page">3</button>
+                        <button class="num-page">4</button>
+                        <button class="next-page">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-center">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="column">
+                    <img src="./assets/image/logo-yellow.png" alt="Lesson." class="footer__logo">
+                    <p class="desc">Life's pretty straight without shopping, shopping made easier with Javix website.</p>
+                    <div class="footer__social">
+                        <a href="#!">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#!">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#!">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#!">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="column">
+                    <h3 class="title">Company</h3>
+                    <ul class="list">
+                        <li>
+                            <a href="#!">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Features</a>
+                        </li>
+                        <li>
+                            <a href="#!">Our Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!">Latest News</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="column">
+                    <h3 class="title">Support</h3>
+                    <ul class="list">
+                        <li>
+                            <a href="#!">FAQ’s</a>
+                        </li>
+                        <li>
+                            <a href="#!">Terms &amp; Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="column">
+                    <h3 class="title">Address</h3>
+                    <ul class="list">
+                        <li>
+                            <a href="#!"><strong>Location:</strong> Thanh Phu village, Vinh Cuu district, Dong Nai province, Viet Nam</a>
+                        </li>
+                        <li>
+                            <a href="#!"><strong>Email:</strong> nguyenhoanggiavi123@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#!"><strong>Phone:</strong> +84 0987654321</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copy-right">
+                <p class="desc">Copyright ©2023 Javix, All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
