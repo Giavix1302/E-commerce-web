@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reponsive.css">
     <!-- title -->
-    <title>Cart | Javix</title>
+    <title>About | Javix</title>
 </head>
 <body>
     <header class="header">
@@ -41,12 +41,34 @@
                 <img src="./assets/image/logo.svg" alt="" class="header__logo__img">
             </a>
             <ul class="header__nav">
-                <li><a href="./index.html" class="header__nav_item">home</a></li>
+                <li><a href="./index.html" class="header__nav_item ">home</a></li>
                 <li><a href="./products.html" class="header__nav_item ">shop</a></li>
                 <li><a href="./about.html" class="header__nav_item">about</a></li>
             </ul>
             <div class="header__wrap">
+                <a href="./cart.html" class="toggle-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="toggle-cart-count">1</span>
+                </a>
+                <!-- sub cart -->
+                <div class="sub-cart">
+                    <div class="list-sub-cart">
+                        <!-- <h5 class="sub-cart-empty">Cart is empty !</h5> -->
+                        <article class="sub-cart-item">
+                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="sub-cart-img">
+                            <div class="sub-cart-item-info">
+                                <h5 class="sub-cart-title line-clamp">Fjalraven - Foldsack No.1 Backpack, Fits 15 Laptops</h5>
+                                <p class="sub-cart-cate">men's clothing</p>
+                            </div>
+                            <p class="sub-cart-quatity">x1</p>
+                        </article>
+                        
+                    </div>
+                    <a href="./cart.html" class="sub-cart-btn">Go to cart</a>
+                </div>
+                
                 <button class="header__sign-up">sign up</button>
+
                 <button class="sidebar-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -54,82 +76,35 @@
         </div>
     </header>
 
-    <section class="cart">
-        <div class="cart-background">
-            <h3 class="cart-background-title">#cart</h3>
-            <p class="cart-background-desc">Add you coupon code & save upto 70%!</p>
-        </div>
-        <div class="cart-center">
-            <section class="cart-container">
-                <div class="cart-heading">
-                    <h3 class="cart-title">Shopping Cart</h3>
-                    <span class="cart-quantity"> 3 Items</span>
-                </div>
-                <div class="cart-name-info">
-                    <p class="cart-product-detail-text">PRODUCT DETAILS</p>
-                    <P class="cart-quantity-text">QUANTITY</P>
-                    <p class="cart-price-text">PRICE</p>
-                    <p class="cart-total-text">TOTAL</p>
-                </div>
-                <div class="cart-list">
-                    <article class="cart-item">
-                        <div class="cart-item-info">
-                            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="cart-item-image">
-                            <div class="cart-wrap-info">
-                                <h5 class="cart-item-name line-clamp">Fjalraven - Foldsack No.1 Backpack, Fits 15 Laptops</h5>
-                                <p class="cart-item-cate">men's clothing</p>
-                                <button class="cart-item-remove">Remove</button>
-                            </div>
-                        </div>
-                        <div class="cart-item-quatity">
-                            <button class="cart-item-quatity-decrease">
-                                <i class="fa-solid fa-minus"></i>
-                            </button>
-                            <span class="cart-item-quatity-num">2</span>
-                            <button class="cart-item-quatity-increase">
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                        </div>
-                        <span class="cart-item-price">34</span>
-                        <span class="cart-item-total">66</span>
-                    </article>
-                    
-                </div>
-                
-            </section>
+    <section class="product-detail">
+        <section class="product-detail-center">
+            <div class="bread-crumb-nav">
+                <h3 class="bcv-title">Home</h3>
+                <div class="icon-divided">/</div>
+                <h3 class="bcv-title">Product</h3>
+            </div>
 
-            <section class="order-summary">
-                <section class="order-coupon">
-                    <h4 class="order-coupon-heading">Apply Coupon</h4>
-                    <div class="form__group">
-                        <input type="text" id="order-coupon-fullname" name="order-coupon-fullname" rules="required" placeholder="Enter you coupon" class="order-coupon-form__control">
-                        <button class="order-coupon-btn">Apply</button>
+            <section class="product-detail-container">
+                <div class="product-detail-img-background">
+                    <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="product-detail-img">
+                </div>
+                <section class="product-detail-info">
+                    <h2 class="product-detail-name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h2>
+                    <p class="product-detail-desc">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</p>
+                    <p class="product-detail-cate">men's clothing</p>
+                    <p class="product-detail-price">109.95</p>
+                    <div class="product-detail-btns">
+                        <button class="product-detail-btn">Buy Now</button>
+                        <button class="product-detail-btn">Add To Cart</button>
                     </div>
                 </section>
-
-                <section class="order-cart-totals">
-                    <h4 class="order-cart-heading">Cart Totals</h4>
-                    <table class="order-cart-table">
-                        <tr class="cart-table-column">
-                            <td>Cart Subtotal</td>
-                            <td class="num-totals">334</td>
-                        </tr>
-                        <tr class="cart-table-column">
-                            <td>Shipping</td>
-                            <td>Free</td>
-                        </tr>
-                        <tr class="cart-table-column text-highline">
-                            <td>Total:</td>
-                            <td class="num-totals">334</td>
-                        </tr>
-                    </table>
-                    <button class="order-cart-btn">Check Out</button>
-                </section>
             </section>
-        </div>
-    </section>
-    
+            
 
+                
+            
+        </section> 
+    </section>
     
     <footer class="footer">
         <div class="footer-center">
@@ -255,6 +230,7 @@
             </div>
         </div>
     </div>
+
     <div class="sidebar">
         <div class="sidebar-container">
             <header class="sidebar__hearder">

@@ -30,6 +30,7 @@
     <!-- style -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
     <!-- title -->
     <title>Shop | Javix</title>
 </head>
@@ -67,6 +68,10 @@
                 </div>
                 
                 <button class="header__sign-up">sign up</button>
+
+                <button class="sidebar-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -79,7 +84,7 @@
                 <h3 class="bcv-title">Shop</h3>
             </div>
             <div class="wrap-sidebar-products">
-                <section class="sidebar">
+                <section class="products-sidebar">
                     <section class="seach-products">
                         <label class="search-text">Search</label>
                         <input type="text" name="" id="" class="search-input" placeholder="Search...">
@@ -133,7 +138,7 @@
                                 <p class="product-card__cate">men's clothing</p>
     
                                 <div class="product-card__btn">
-                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="./productDetail.html" class="product-card__btn-buy">DETAIL</a>
                                     <a href="" class="product-card__btn-cart">ADD TO CART</a>
                                 </div>
                             </div>
@@ -152,7 +157,7 @@
                                 <p class="product-card__cate">men's clothing</p>
     
                                 <div class="product-card__btn">
-                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="./productDetail.html" class="product-card__btn-buy">DETAIL</a>
                                     <a href="" class="product-card__btn-cart">ADD TO CART</a>
                                 </div>
                             </div>
@@ -171,7 +176,7 @@
                                 <p class="product-card__cate">men's clothing</p>
     
                                 <div class="product-card__btn">
-                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="./productDetail.html" class="product-card__btn-buy">DETAIL</a>
                                     <a href="" class="product-card__btn-cart">ADD TO CART</a>
                                 </div>
                             </div>
@@ -190,7 +195,7 @@
                                 <p class="product-card__cate">men's clothing</p>
     
                                 <div class="product-card__btn">
-                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="./productDetail.html" class="product-card__btn-buy">DETAIL</a>
                                     <a href="" class="product-card__btn-cart">ADD TO CART</a>
                                 </div>
                             </div>
@@ -210,7 +215,7 @@
                                 <p class="product-card__cate">men's clothing</p>
     
                                 <div class="product-card__btn">
-                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="./productDetail.html" class="product-card__btn-buy">DETAIL</a>
                                     <a href="" class="product-card__btn-cart">ADD TO CART</a>
                                 </div>
                             </div>
@@ -229,7 +234,7 @@
                                 <p class="product-card__cate">men's clothing</p>
     
                                 <div class="product-card__btn">
-                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="./productDetail.html" class="product-card__btn-buy">DETAIL</a>
                                     <a href="" class="product-card__btn-cart">ADD TO CART</a>
                                 </div>
                             </div>
@@ -247,7 +252,7 @@
                                 </div>
                                 <p class="product-card__cate">men's clothing</p>
                                 <div class="product-card__btn">
-                                    <a href="" class="product-card__btn-buy">BUY NOW</a>
+                                    <a href="./productDetail.html" class="product-card__btn-buy">DETAIL</a>
                                     <a href="" class="product-card__btn-cart">ADD TO CART</a>
                                 </div>
                             </div>
@@ -351,5 +356,71 @@
             </div>
         </div>
     </footer>
+    <!-- modal -->
+    <div class="modal-signUp">
+        <div class="modal-container">
+            <img src="./assets/image/commerce-img-modal.jpg" alt="" class="modal__background">
+            <div class="modal-content">
+                <button class="modal__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <form action="" method="post" class="form" id="register-form">
+                    <h3 class="form__heading">Sign Up</h3>
+                    <p class="form__desc">Register for a convenient shopping experience.</p>
+
+                    <div class="form__group">
+                        <label for="fullname" class="form__label">Username</label>
+                        <input type="text" id="fullname" name="fullname" rules="required" placeholder="Javvix_1302" class="form__control">
+                        <span class="form__message"></span>
+                    </div>
+
+                    <div class="form__group ">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" rules="required|email" placeholder="Javvix@gmail.com" class="form__control">
+                        <span class="form__message"></span>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="password" class="form__label">Password</label>
+                        <input type="password" id="password" name="password" rules="required|min:6" placeholder="Enter your password" class="form__control">
+                        <span class="form__message"></span>
+                    </div>
+
+                    <button class="form__submit">Sign Up</button>
+                    
+                    <div class="form__remembe-acc">
+                        <input type="checkbox" name="" id="">
+                        <p>Remember Me</p>
+                    </div>    
+                </form>
+
+                <div class="modal__footer">
+                    <p>Do you already have an account? <a href="">Login Javix</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-container">
+            <header class="sidebar__hearder">
+                <a href="#!" class="header__logo">
+                    <img src="./assets/image/logo.svg" alt="" class="header__logo__img">
+                </a>
+                <button class="sidebar__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </header>
+
+            <section class="sidebar__body">
+                <ul class="sidebar__list">
+                    <li><a href="./index.html" class="header__nav_item ">home</a></li>
+                    <li><a href="#!" class="header__nav_item ">shop</a></li>
+                    <li><a href="./about.html" class="header__nav_item">about</a></li>
+                </ul>
+                <button class="sidebar__sign-up">Sign Up</button>
+            </section>
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
 </body>
 </html>

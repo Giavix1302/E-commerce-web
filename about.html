@@ -30,6 +30,7 @@
     <!-- style -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
     <!-- title -->
     <title>About | Javix</title>
 </head>
@@ -67,6 +68,10 @@
                 </div>
                 
                 <button class="header__sign-up">sign up</button>
+
+                <button class="sidebar-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -252,9 +257,29 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-    <!-- <script type="module" src="./main.js"></script> -->
+
+    <div class="sidebar">
+        <div class="sidebar-container">
+            <header class="sidebar__hearder">
+                <a href="#!" class="header__logo">
+                    <img src="./assets/image/logo.svg" alt="" class="header__logo__img">
+                </a>
+                <button class="sidebar__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </header>
+
+            <section class="sidebar__body">
+                <ul class="sidebar__list">
+                    <li><a href="./index.html" class="header__nav_item ">home</a></li>
+                    <li><a href="./products.html" class="header__nav_item ">shop</a></li>
+                    <li><a href="#!" class="header__nav_item">about</a></li>
+                </ul>
+                <button class="sidebar__sign-up">Sign Up</button>
+            </section>
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
