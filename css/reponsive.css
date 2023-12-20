@@ -188,7 +188,7 @@
     }
     /* product */
     .product-detail-container {
-        display: block;
+        flex-direction: column;
         margin: 0;
     }
     .product-detail-img {
@@ -209,4 +209,5 @@
         font-size: 2.5rem;
         line-height: 1.4;
     }
+    
 }
