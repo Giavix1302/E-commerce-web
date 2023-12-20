@@ -52,8 +52,8 @@ featuredList.innerHTML = listFeatured.map((item, slideIndex) => {
             
             <div class="featured__item-wrap-footer">
                 <p class="featured__item-price">${price}</p>
-                <button class="featured__item-btn">
-                        <a href="" class="featured__item-link">Detail</a>
+                <button class="featured__item-btn" data-id=${id}>
+                    <a href="../productDetail.html" class="featured__item-link">Detail</a>
                 </button>
             </div>
         </div>

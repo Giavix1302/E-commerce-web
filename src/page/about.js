@@ -1,7 +1,7 @@
-import './src/slide.js';
-import './src/modal.js';
-import './src/sideBar.js';
-import { getStorageItem, getElement } from './src/utils.js';
+import '../sideBar.js';
+import '../modal.js';
+import { getStorageItem } from '../utils.js';
+import { getElement } from '../utils.js';
 
 const init = () => {
     const cart = getStorageItem('cart');
